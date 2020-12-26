@@ -1,6 +1,8 @@
 java = java.lang 
 moc = cpp.lang
 cpp = cpp.lang
+asn = asn.lang
+mib = asn.lang
 c = c.lang
 C = cpp.lang
 cc = cpp.lang

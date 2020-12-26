@@ -1,0 +1,26 @@
+preproc = "import|from|IMPORTS|MODULE-IDENTITY|DEFINITIONS|BEGIN|FROM|END"
+
+comment start "--"
+
+include "script_comment.lang"
+include "c_string.lang"
+
+
+include "number.lang"
+
+keyword = "OBJECT IDENTIFIER|\:\:=|OBJECT IDENTIFIER|OBJECT-TYPE|TEXTUAL-CONVENTION"
+
+objects = "LAST-UPDATED|ORGANIZATION|CONTACT-INFO|DESCRIPTION|REVISION|STATUS|SYNTAX|MAX-ACCESS|SEQUENCE|ACCESS|UNITS|INDEX|AGENT|MODULE-COMPLIANCE"
+type = "PhysicalIndex|KBytes|current|Integer32|INTEGER|Gauge32|DisplayString|DateAndTime|TestAndIncr|TimeStamp|TruthValue|DisplayString|AutonomousType|RowPointer|TimeTicks|Counter32|read-only|mandatory|AUGMENTS"
+
+# for TEXTUAL-CONVENTION defision
+type = '([[:alpha:]]|_)[[:word:]]*(?=[[:blank:]].*TEXTUAL-CONVENTION)'
+
+
+
+asnSymbol = "~","!","%","^","*","(",")","+","=","[","{","}",
+        "]","\\",":",";",",",".","/","?","&","<",">","\|","%%"
+asnSymbol = '(##){2}(?!#)'
+
+cbracket = '[[:word:]]?-?[[:word:]]*(?=[[:blank:]]*\()'
+

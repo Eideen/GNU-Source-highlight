@@ -7,7 +7,7 @@ comment cyan i ;
 number purple ;
 preproc darkblue b ;
 symbol darkred ;
-function b;
+function black b;
 cbracket red;
 variable darkgreen ;
 
@@ -42,3 +42,7 @@ when cyan ;
 then yellow ;
 and_but pink ;
 table white ;
+
+//ASN.1
+objects pink ;
+asnSymbol yellow;
